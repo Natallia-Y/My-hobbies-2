@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Times New Roman", Arial, sans-serif;
+    text-align: center;
+}
+
+section,
+footer,
+header {
+    padding: 50px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1205px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.header,
+.footer {
+    background-color: #F3F7EA;
+}
+
+.my-hobbies,
+.about-me {
+    background-color: #D8D5D5;
+}
+
+.full-name {
+    font-size: 5rem;
+}
+
+.my-photo {
+    margin: 20px 0;
+}
+
+.my-photo img {
+    width: 100%;
+    max-width: 620px;
+}
+
+.hobbies {
+    max-width: 1205px;
+    display: flex;
+    margin: 0 auto 30px;
+}
+
+.hobby {
+    width: calc((100% - 48px) / 3);
+    max-width: 720px;
+    text-align: center;
+    position: relative;
+}
+
+.hobby :not(:last-child) {
+    margin-right: 24px;
+}
+
+.hobby__name {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hobby__description {
+    max-width: 360px;
+}
+
+.subtitle {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.text {
+    font-size: 1.5rem;
+}
+
+.footer__contacts {
+    font-size: 4rem;
+}
+
+.contacts {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin: 30px 0;
+    line-height: 1.42;
+}
+
+.contacts__item:hover {
+    transform: scale(1.8);
+    transition: transform 0.5s linear;
+}
+
+.contacts__link {
+    color: #FFF;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation__item {
+    font-size: 2.2rem;
+    color: #000;
+}
+
+.navigation__item:not(:last-child)::after {
+    content: "";
+    width: 16px;
+    height: 1.5px;
+    rotate: -90deg;
+    display: inline-block;
+    background-color: #D8D5D5;
+    margin: 0 25px;
+    vertical-align: middle;
+}
+
+.fa-brands {
+    color: #262626;
+    line-height: 50px;
+}
